@@ -16,9 +16,9 @@ class TypeSeeder extends Seeder
     {
         $type = ["frontend","Backend","Full-Stack","Data Analystics"];
         foreach($type as $typess){
-            $types = new Type();
-            $types->title = $typess;
-            $types->save();
+            $typess = new Type();
+            $typess->title = $typess;
+            $typess->save();
         }
 
         

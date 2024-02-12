@@ -27,8 +27,9 @@ class ProjectController extends Controller
 
     {
         $newProject = Project::all();
+        $tech =Technology::all();
 
-        return view('admin.project.create',compact("newProject"));
+        return view('admin.project.create',compact("newProject","tech"));
     }
 
     /**

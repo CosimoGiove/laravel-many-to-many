@@ -17,7 +17,8 @@
             <div>descrizione:{{ $project['description'] }}
             </div>
             <div>
-                tipo: {{$project->type->title}}
+                tipo:
+                {{$project->type->title}}
             </div>
             <div>
                 tech utilizzate:

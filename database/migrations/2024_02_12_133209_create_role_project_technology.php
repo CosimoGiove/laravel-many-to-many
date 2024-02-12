@@ -12,7 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('role_project_technology', function (Blueprint $table) {
-            $table->id();
+            // $table->id();
+            $table->unsignedBigInteger('project_id');
+            $table->foreign('project_id')->references('id')->on('projects')->cascadeOnDelete();
+            $table->unsignedBigInteger('technology_id');
+            $table->foreign('technology_id')->references('id')->on('technologies')->cascadeOnDelete();
+            $table->primary(['project_id', 'technology_id']);
             $table->timestamps();
         });
     }

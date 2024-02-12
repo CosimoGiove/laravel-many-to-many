@@ -19,6 +19,14 @@
             <div>
                 tipo: {{$project->type->title}}
             </div>
+            <div>
+                tech utilizzate:
+                <ul>
+                    @foreach ($tech as $technology)
+                    <li> {{ $technology->tech }}</li>
+                @endforeach
+                </ul>
+            </div>
 
         </div>
     </main>

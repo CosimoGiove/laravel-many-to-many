@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Project;
+use App\Models\Technology;
 use App\Models\Type;
 use Illuminate\Http\Request;
 
@@ -52,7 +53,8 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        return view("admin.project.show",compact("project"));
+        $tech =Technology::all();
+        return view("admin.project.show",compact("project","tech"));
     }
 
     /**

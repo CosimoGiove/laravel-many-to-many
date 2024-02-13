@@ -52,7 +52,7 @@
                                 id="tech-{{ $technology->id }}"
                                 {{ in_array($technology->id, old('tech', [])) ? 'checked' : '' }}>
                             <label class="form-check-label"
-                                for="tech-{{ $technology->id }}">{{ $technology->tech }}</label>
+                                for="tech-{{ $technology->id }}">{{ $technology->tech}}</label>
                         </div>
                     @endforeach
                     <div>

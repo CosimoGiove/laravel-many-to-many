@@ -39,13 +39,13 @@
         <input type="text" class="form-control" id="titolo" aria-describedby="emailHelp" id="titolo"
         value="{{ old('description', $project['description']) }}" name="description">
         <label for="prezzo" class="form-label">
-            prezzo:
+           language:
         </label>
         <input type="text" class="form-control" id="titolo" aria-describedby="emailHelp" id="titolo"
         value="{{ old('language', $project['language']) }}" name="language">
 
         <label for="serie" class="form-label">
-            serie:
+            frameworks:
         </label>
         <input type="text" class="form-control" id="titolo" aria-describedby="emailHelp" id="titolo"
             value="{{ old('frameworks', $project['frameworks']) }}" name="frameworks">

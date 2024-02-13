@@ -18,13 +18,13 @@
             </div>
             <div>
                 tipo:
-                {{$project->type->title}}
+                {{$project->type}}
             </div>
             <div>
                 tech utilizzate:
                 <ul>
                     @foreach ($tech as $technology)
-                    <li> {{ $technology->tech }}</li>
+                    <li> {{ $technology->tech}}</li>
                 @endforeach
                 </ul>
             </div>
